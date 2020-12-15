@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    /**
+     * Change this in Production
+     * */
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.devx.fooddelivery"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-database:19.5.1'
+    def glide_version = "4.11.0"
+    def lifecycle_version = "2.2.0"
+    def room_version = "2.2.5"
+    def lottieVersion = "3.4.0"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    //RazorPay
+    implementation 'com.razorpay:checkout:1.5.16'
+
+    //Layout and UI
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    //CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //Lotte Animation
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //FirebaseAuth
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+
+    //Firestore
+    implementation 'com.google.firebase:firebase-firestore'
+
+    //FirebaseBOM
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+
+    //Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //Material Design
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    //glide Dependency
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    //Recycler view
+    //noinspection GradleCompatible
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    //Firebase Analytics and FCM
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    //Firebase Storage & Storage UI
+    implementation 'com.firebaseui:firebase-ui-storage:6.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    //Retrofit GSON Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //Android Room SQL
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //RX-JAVA
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+
+    //Lint
+    implementation 'commons-validator:commons-validator:1.6'
+
+    //Testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}
