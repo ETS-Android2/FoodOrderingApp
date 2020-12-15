@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devx.fooddelivery.MainActivity;
@@ -23,6 +24,7 @@ import java.util.UUID;
 public class SignUp extends AppCompatActivity {
 
     EditText name, number, password, address, email;
+    TextView redirectToLogin;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore firestore;
 
@@ -36,9 +38,17 @@ public class SignUp extends AppCompatActivity {
         password = findViewById(R.id.rpassword);
         email = findViewById(R.id.remail);
         address = findViewById(R.id.raddress);
+        redirectToLogin = findViewById(R.id.toLogin);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
+
+        redirectToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 

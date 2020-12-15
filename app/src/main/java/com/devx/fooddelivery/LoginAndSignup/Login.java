@@ -92,4 +92,7 @@ public class Login extends AppCompatActivity {
 
     }
 
+    public void forgotPassword(View view) {
+        Toast.makeText(this, "Contact Administrator for password change", Toast.LENGTH_SHORT).show();
+    }
 }

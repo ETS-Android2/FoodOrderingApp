@@ -1,6 +1,6 @@
 *.iml
 .gradle
-/app/release
+/app/release/output.json
 /app/google-services.json
 /.idea
 /local.properties
