@@ -3,7 +3,7 @@ Android Application for Food Delivery for a Restaurant.
 
 <!-- Project Detais -->
 ## Project Details
-- Application is hosted on Firebase.
+- Client Application is hosted on Firebase.
   - UI on Firebase Database
   - User and Order Data on Firebase Firestore
   - Cart features are implemented using Room LiveData
@@ -16,5 +16,15 @@ Android Application for Food Delivery for a Restaurant.
 - Add google-servies.json to App.
 - Add razorpay API in manifest.xml
 - Enable Email/Password Authentication
+- Orders will be handled from Firebase Console For now.
   
  ### [Project APK](https://github.com/yash-k9/FoodDeliveryApp/blob/main/app/release/app-release.apk)
+ 
+ <!-- Screenshots -->
+### Screenshots
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Login.jpg" width="200"> &ensp;
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Signup.jpg" width="200"> &ensp;
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Order.jpg" width="200"> &ensp;
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Cart.jpg" width="200"> &ensp;
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/OrderHistory.jpg" width="200"> &ensp;
+<img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Notification.jpg" width="200"> &ensp;
