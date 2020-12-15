@@ -9,12 +9,12 @@ Android Application for Food Delivery for a Restaurant.
   - Cart features are implemented using Room LiveData
 - Integrated with Razorpay Sandbox.
   
-<!-- How to Run? -->
-## How to Run?
+<!-- Modify -->
+## To Modify the content of the project
 - Create a project in Firebase Console
-  - Check this [POJO](https://github.com/yash-k9/FoodDeliveryApp/blob/main/app/src/main/java/com/devx/fooddelivery/Model/FoodItem.java) and add data of your choice to Firebase Database
-  - Add google-servies.json to App.
-  - Add razorpay API in manifest.xml
-  - Enable Email/Password Authentication
+- Check this [POJO](https://github.com/yash-k9/FoodDeliveryApp/blob/main/app/src/main/java/com/devx/fooddelivery/Model/FoodItem.java) and add data of your choice to Firebase Database
+- Add google-servies.json to App.
+- Add razorpay API in manifest.xml
+- Enable Email/Password Authentication
   
- ### [Project APK]()
+ ### [Project APK](https://github.com/yash-k9/FoodDeliveryApp/blob/main/app/release/app-release.apk)
