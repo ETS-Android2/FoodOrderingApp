@@ -1,5 +1,5 @@
 # FoodDeliveryApp
-Android Application for Food Delivery for a Restaurant.
+Client Android Application for Food Delivery.
 
 <!-- Project Detais -->
 ## Project Details
