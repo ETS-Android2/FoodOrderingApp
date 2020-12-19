@@ -1,4 +1,4 @@
-# FoodDeliveryApp
+# FoodOrderingApp
 Client Android Application for Food Delivery.
 
 <!-- Project Detais -->
