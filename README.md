@@ -28,3 +28,5 @@ Client Android Application for Food Delivery.
 <img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Cart.jpg" width="200"> &ensp;
 <img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/OrderHistory.jpg" width="200"> &ensp;
 <img src="https://github.com/yash-k9/FoodDeliveryApp/blob/main/Screenshots/Notification.jpg" width="200"> &ensp;
+
+* note: __Bug fixes and Code-Refactoring will be fixed soon__
