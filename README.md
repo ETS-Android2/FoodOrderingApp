@@ -1,4 +1,5 @@
 # FoodOrderingApp
+## This Application will be updated soon with a better architecture
 Client Android Application for Food Delivery.
 
 <!-- Project Detais -->
